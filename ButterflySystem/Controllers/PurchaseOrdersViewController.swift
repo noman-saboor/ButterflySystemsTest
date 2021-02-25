@@ -86,7 +86,7 @@ class PurchaseOrdersViewController: UIViewController, UITableViewDelegate, UITab
         AF.request("https://my-json-server.typicode.com/butterfly-systems/sample-data/purchase_orders").responseJSON { response in
             switch response.result {
                 case .success(let json):
-                    self.storeProductOrders(json)
+                    self.storeProductOrders(json)       //Sends data from API to be stored in CoreData database
                     
                 case .failure(let error):
                     print(error)
@@ -103,40 +103,44 @@ class PurchaseOrdersViewController: UIViewController, UITableViewDelegate, UITab
         let entity2 = NSEntityDescription.entity(forEntityName: "Invoice", in: managedContext)!
 
         if let jsonArray = json as? NSArray {
-            for purchaseOrder in jsonArray {
-                if let pOrder = purchaseOrder as? [String:Any] {
-                    if let purchaseOrderID = pOrder["id"] as? Int32 {
-                        if let puOrder = self.purchaseOrders.first(where: { $0.id == purchaseOrderID }) {
-                            if let dateString = pOrder["last_updated"] as? String {
-                                if let date = dateString.toDateTime() {
-                                    if let lastUpdated = puOrder.last_updated {
-                                        if lastUpdated == date {
-                                            self.setObjectValue(puOrder, json: pOrder)
+            for apiPurchaseOrder in jsonArray {
+                if let apiDictPurchaseOrder = apiPurchaseOrder as? [String:Any] {
+                    if let apiPurchaseOrderID = apiDictPurchaseOrder["id"] as? Int32 {
+                        if let storedPurchaseOrder = self.purchaseOrders.first(where: { $0.id == apiPurchaseOrderID }) {
+                            //checks to see if the stored ID is equal to the ID from the API
+                            //If yes then the code moves on to check the last_updated date of this ID
+                            //If not then API data will be stored in database without the need to check last_updated date
+                            if let apiDateString = apiDictPurchaseOrder["last_updated"] as? String {
+                                //If the api_last_updated date is new compared to stored_last_updated date then the database will be updated
+                                if let apiLastUpdated = apiDateString.toDateTime() {
+                                    if let storedLastUpdated = storedPurchaseOrder.last_updated {
+                                        if storedLastUpdated < apiLastUpdated {
+                                            self.setObjectValue(storedPurchaseOrder, json: apiDictPurchaseOrder)
                                             
-                                            if let items = puOrder.items {
-                                                puOrder.removeFromItems(items)
+                                            if let items = storedPurchaseOrder.items {
+                                                storedPurchaseOrder.removeFromItems(items)
                                             }
                                             
-                                            if let invoices = puOrder.invoices {
-                                                puOrder.removeFromInvoices(invoices)
+                                            if let invoices = storedPurchaseOrder.invoices {
+                                                storedPurchaseOrder.removeFromInvoices(invoices)
                                             }
                                             
-                                            if let items = pOrder["items"] as? NSArray {
+                                            if let items = apiDictPurchaseOrder["items"] as? NSArray {
                                                 for item in items {
                                                     if let item = item as? [String:Any] {
                                                         let itemObject = NSManagedObject(entity: entity1, insertInto: managedContext) as! Item
                                                         self.setObjectValue(itemObject, json: item)
-                                                        puOrder.addToItems(itemObject)
+                                                        storedPurchaseOrder.addToItems(itemObject)
                                                     }
                                                 }
                                             }
                                             
-                                            if let invoices = pOrder["invoices"] as? NSArray {
+                                            if let invoices = apiDictPurchaseOrder["invoices"] as? NSArray {
                                                 for invoice in invoices {
                                                     if let invoice = invoice as? [String:Any] {
                                                         let invoiceObject = NSManagedObject(entity: entity2, insertInto: managedContext) as! Invoice
                                                         self.setObjectValue(invoiceObject, json: invoice)
-                                                        puOrder.addToInvoices(invoiceObject)
+                                                        storedPurchaseOrder.addToInvoices(invoiceObject)
                                                     }
                                                 }
                                             }
@@ -147,10 +151,11 @@ class PurchaseOrdersViewController: UIViewController, UITableViewDelegate, UITab
                             }
                         }
                         else {
+                            //Data from the api is stored in database
                             let order = NSManagedObject(entity: entity, insertInto: managedContext) as! PurchaseOrder
-                            self.setObjectValue(order, json: pOrder)
+                            self.setObjectValue(order, json: apiDictPurchaseOrder)
                             
-                            if let items = pOrder["items"] as? NSArray {
+                            if let items = apiDictPurchaseOrder["items"] as? NSArray {
                                 for item in items {
                                     if let item = item as? [String:Any] {
                                         let itemObject = NSManagedObject(entity: entity1, insertInto: managedContext) as! Item
@@ -160,7 +165,7 @@ class PurchaseOrdersViewController: UIViewController, UITableViewDelegate, UITab
                                 }
                             }
                             
-                            if let invoices = pOrder["invoices"] as? NSArray {
+                            if let invoices = apiDictPurchaseOrder["invoices"] as? NSArray {
                                 for invoice in invoices {
                                     if let invoice = invoice as? [String:Any] {
                                         let invoiceObject = NSManagedObject(entity: entity2, insertInto: managedContext) as! Invoice
