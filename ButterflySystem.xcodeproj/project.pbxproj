@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43E2757BBE8C285BCE6A0C86 /* Pods_ButterflySystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DBB438948C33075BE5D4E0 /* Pods_ButterflySystem.framework */; };
+		8B9D8CF525E748A90024116C /* AddPurchaseOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8CF425E748A90024116C /* AddPurchaseOrderViewController.swift */; };
+		8B9D8CFA25E748BF0024116C /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8CF925E748BF0024116C /* AddNewItemViewController.swift */; };
+		953DA09CEDFD3C6D324553C1 /* Pods_ButterflySystem_ButterflySystemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370D594DFCDBA4F6BA1EBD1E /* Pods_ButterflySystem_ButterflySystemUITests.framework */; };
+		B51597A125E6670C003FCF57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51597A025E6670C003FCF57 /* AppDelegate.swift */; };
+		B51597A325E6670C003FCF57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51597A225E6670C003FCF57 /* SceneDelegate.swift */; };
+		B51597A825E6670C003FCF57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597A625E6670C003FCF57 /* Main.storyboard */; };
+		B51597AB25E6670C003FCF57 /* ButterflySystem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B51597A925E6670C003FCF57 /* ButterflySystem.xcdatamodeld */; };
+		B51597AD25E6670D003FCF57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51597AC25E6670D003FCF57 /* Assets.xcassets */; };
+		B51597B025E6670D003FCF57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597AE25E6670D003FCF57 /* LaunchScreen.storyboard */; };
+		B51597BB25E6670D003FCF57 /* ButterflySystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51597BA25E6670D003FCF57 /* ButterflySystemTests.swift */; };
+		B51597C625E6670D003FCF57 /* ButterflySystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51597C525E6670D003FCF57 /* ButterflySystemUITests.swift */; };
+		B51597F525E669BB003FCF57 /* PurchaseOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51597F325E669BB003FCF57 /* PurchaseOrderTableViewCell.xib */; };
+		B51597F625E669BB003FCF57 /* PurchaseOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51597F425E669BB003FCF57 /* PurchaseOrderTableViewCell.swift */; };
+		B51597FD25E669D0003FCF57 /* PurchaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51597FB25E669D0003FCF57 /* PurchaseDetailViewController.swift */; };
+		B51597FE25E669D0003FCF57 /* PurchaseOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51597FC25E669D0003FCF57 /* PurchaseOrdersViewController.swift */; };
+		B515983325E66C1B003FCF57 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515982D25E66C1B003FCF57 /* Item+CoreDataClass.swift */; };
+		B515983425E66C1B003FCF57 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515982E25E66C1B003FCF57 /* Item+CoreDataProperties.swift */; };
+		B515983525E66C1B003FCF57 /* PurchaseOrder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515982F25E66C1B003FCF57 /* PurchaseOrder+CoreDataClass.swift */; };
+		B515983625E66C1B003FCF57 /* PurchaseOrder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515983025E66C1B003FCF57 /* PurchaseOrder+CoreDataProperties.swift */; };
+		B515983725E66C1B003FCF57 /* Invoice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515983125E66C1B003FCF57 /* Invoice+CoreDataClass.swift */; };
+		B515983825E66C1B003FCF57 /* Invoice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515983225E66C1B003FCF57 /* Invoice+CoreDataProperties.swift */; };
+		B515983D25E671A1003FCF57 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515983C25E671A1003FCF57 /* Extensions.swift */; };
+		B515984325E69DAD003FCF57 /* PurchaseDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515984125E69DAD003FCF57 /* PurchaseDetailsTableViewCell.swift */; };
+		B515984425E69DAD003FCF57 /* PurchaseDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B515984225E69DAD003FCF57 /* PurchaseDetailsTableViewCell.xib */; };
+		B9B12B592DB797B5CEAFD10B /* Pods_ButterflySystemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3744FCC97FEB74E2125EED0 /* Pods_ButterflySystemTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B51597B725E6670D003FCF57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B515979525E6670C003FCF57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B515979C25E6670C003FCF57;
+			remoteInfo = ButterflySystem;
+		};
+		B51597C225E6670D003FCF57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B515979525E6670C003FCF57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B515979C25E6670C003FCF57;
+			remoteInfo = ButterflySystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03DBB438948C33075BE5D4E0 /* Pods_ButterflySystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterflySystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EDD66C3F5DB983ED4F1D99 /* Pods-ButterflySystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflySystem.release.xcconfig"; path = "Target Support Files/Pods-ButterflySystem/Pods-ButterflySystem.release.xcconfig"; sourceTree = "<group>"; };
+		370D594DFCDBA4F6BA1EBD1E /* Pods_ButterflySystem_ButterflySystemUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterflySystem_ButterflySystemUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71AF6EF44C59C111D28C5185 /* Pods-ButterflySystem-ButterflySystemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflySystem-ButterflySystemUITests.debug.xcconfig"; path = "Target Support Files/Pods-ButterflySystem-ButterflySystemUITests/Pods-ButterflySystem-ButterflySystemUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		790204622E413E1FA4C83F91 /* Pods-ButterflySystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflySystem.debug.xcconfig"; path = "Target Support Files/Pods-ButterflySystem/Pods-ButterflySystem.debug.xcconfig"; sourceTree = "<group>"; };
+		8B9D8CF425E748A90024116C /* AddPurchaseOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurchaseOrderViewController.swift; sourceTree = "<group>"; };
+		8B9D8CF925E748BF0024116C /* AddNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
+		91A484DD13C5A2C5ADF97195 /* Pods-ButterflySystem-ButterflySystemUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflySystem-ButterflySystemUITests.release.xcconfig"; path = "Target Support Files/Pods-ButterflySystem-ButterflySystemUITests/Pods-ButterflySystem-ButterflySystemUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B515979D25E6670C003FCF57 /* ButterflySystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterflySystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51597A025E6670C003FCF57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B51597A225E6670C003FCF57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B51597A725E6670C003FCF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B51597AA25E6670C003FCF57 /* ButterflySystem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ButterflySystem.xcdatamodel; sourceTree = "<group>"; };
+		B51597AC25E6670D003FCF57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B51597AF25E6670D003FCF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B51597B125E6670D003FCF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51597B625E6670D003FCF57 /* ButterflySystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflySystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51597BA25E6670D003FCF57 /* ButterflySystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflySystemTests.swift; sourceTree = "<group>"; };
+		B51597BC25E6670D003FCF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51597C125E6670D003FCF57 /* ButterflySystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflySystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51597C525E6670D003FCF57 /* ButterflySystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflySystemUITests.swift; sourceTree = "<group>"; };
+		B51597C725E6670D003FCF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51597F325E669BB003FCF57 /* PurchaseOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchaseOrderTableViewCell.xib; sourceTree = "<group>"; };
+		B51597F425E669BB003FCF57 /* PurchaseOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseOrderTableViewCell.swift; sourceTree = "<group>"; };
+		B51597FB25E669D0003FCF57 /* PurchaseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseDetailViewController.swift; sourceTree = "<group>"; };
+		B51597FC25E669D0003FCF57 /* PurchaseOrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseOrdersViewController.swift; sourceTree = "<group>"; };
+		B515982D25E66C1B003FCF57 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B515982E25E66C1B003FCF57 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B515982F25E66C1B003FCF57 /* PurchaseOrder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PurchaseOrder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B515983025E66C1B003FCF57 /* PurchaseOrder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PurchaseOrder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B515983125E66C1B003FCF57 /* Invoice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Invoice+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B515983225E66C1B003FCF57 /* Invoice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Invoice+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B515983C25E671A1003FCF57 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B515984125E69DAD003FCF57 /* PurchaseDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		B515984225E69DAD003FCF57 /* PurchaseDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		D1B63E3E8DB2D4B6A1D66CDC /* Pods-ButterflySystemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflySystemTests.release.xcconfig"; path = "Target Support Files/Pods-ButterflySystemTests/Pods-ButterflySystemTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3744FCC97FEB74E2125EED0 /* Pods_ButterflySystemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterflySystemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7EDCD954D07FA6E7EFA3136 /* Pods-ButterflySystemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflySystemTests.debug.xcconfig"; path = "Target Support Files/Pods-ButterflySystemTests/Pods-ButterflySystemTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B515979A25E6670C003FCF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E2757BBE8C285BCE6A0C86 /* Pods_ButterflySystem.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51597B325E6670D003FCF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B12B592DB797B5CEAFD10B /* Pods_ButterflySystemTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51597BE25E6670D003FCF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953DA09CEDFD3C6D324553C1 /* Pods_ButterflySystem_ButterflySystemUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1818D9E00C64FC725D725E0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03DBB438948C33075BE5D4E0 /* Pods_ButterflySystem.framework */,
+				370D594DFCDBA4F6BA1EBD1E /* Pods_ButterflySystem_ButterflySystemUITests.framework */,
+				E3744FCC97FEB74E2125EED0 /* Pods_ButterflySystemTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B515979425E6670C003FCF57 = {
+			isa = PBXGroup;
+			children = (
+				B515982D25E66C1B003FCF57 /* Item+CoreDataClass.swift */,
+				B515982E25E66C1B003FCF57 /* Item+CoreDataProperties.swift */,
+				B515982F25E66C1B003FCF57 /* PurchaseOrder+CoreDataClass.swift */,
+				B515983025E66C1B003FCF57 /* PurchaseOrder+CoreDataProperties.swift */,
+				B515983125E66C1B003FCF57 /* Invoice+CoreDataClass.swift */,
+				B515983225E66C1B003FCF57 /* Invoice+CoreDataProperties.swift */,
+				B515979F25E6670C003FCF57 /* ButterflySystem */,
+				B51597B925E6670D003FCF57 /* ButterflySystemTests */,
+				B51597C425E6670D003FCF57 /* ButterflySystemUITests */,
+				B515979E25E6670C003FCF57 /* Products */,
+				DBB811E1A19D01B97A6A3AFA /* Pods */,
+				1818D9E00C64FC725D725E0B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B515979E25E6670C003FCF57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B515979D25E6670C003FCF57 /* ButterflySystem.app */,
+				B51597B625E6670D003FCF57 /* ButterflySystemTests.xctest */,
+				B51597C125E6670D003FCF57 /* ButterflySystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B515979F25E6670C003FCF57 /* ButterflySystem */ = {
+			isa = PBXGroup;
+			children = (
+				B51597A025E6670C003FCF57 /* AppDelegate.swift */,
+				B515983C25E671A1003FCF57 /* Extensions.swift */,
+				B51597A225E6670C003FCF57 /* SceneDelegate.swift */,
+				B51597A625E6670C003FCF57 /* Main.storyboard */,
+				B51597FA25E669D0003FCF57 /* Controllers */,
+				B51597F225E669BB003FCF57 /* XIBs */,
+				B51597AC25E6670D003FCF57 /* Assets.xcassets */,
+				B51597AE25E6670D003FCF57 /* LaunchScreen.storyboard */,
+				B51597B125E6670D003FCF57 /* Info.plist */,
+				B51597A925E6670C003FCF57 /* ButterflySystem.xcdatamodeld */,
+			);
+			path = ButterflySystem;
+			sourceTree = "<group>";
+		};
+		B51597B925E6670D003FCF57 /* ButterflySystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				B51597BA25E6670D003FCF57 /* ButterflySystemTests.swift */,
+				B51597BC25E6670D003FCF57 /* Info.plist */,
+			);
+			path = ButterflySystemTests;
+			sourceTree = "<group>";
+		};
+		B51597C425E6670D003FCF57 /* ButterflySystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B51597C525E6670D003FCF57 /* ButterflySystemUITests.swift */,
+				B51597C725E6670D003FCF57 /* Info.plist */,
+			);
+			path = ButterflySystemUITests;
+			sourceTree = "<group>";
+		};
+		B51597F225E669BB003FCF57 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				B51597F325E669BB003FCF57 /* PurchaseOrderTableViewCell.xib */,
+				B51597F425E669BB003FCF57 /* PurchaseOrderTableViewCell.swift */,
+				B515984225E69DAD003FCF57 /* PurchaseDetailsTableViewCell.xib */,
+				B515984125E69DAD003FCF57 /* PurchaseDetailsTableViewCell.swift */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		B51597FA25E669D0003FCF57 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B51597FC25E669D0003FCF57 /* PurchaseOrdersViewController.swift */,
+				B51597FB25E669D0003FCF57 /* PurchaseDetailViewController.swift */,
+				8B9D8CF425E748A90024116C /* AddPurchaseOrderViewController.swift */,
+				8B9D8CF925E748BF0024116C /* AddNewItemViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DBB811E1A19D01B97A6A3AFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				790204622E413E1FA4C83F91 /* Pods-ButterflySystem.debug.xcconfig */,
+				23EDD66C3F5DB983ED4F1D99 /* Pods-ButterflySystem.release.xcconfig */,
+				71AF6EF44C59C111D28C5185 /* Pods-ButterflySystem-ButterflySystemUITests.debug.xcconfig */,
+				91A484DD13C5A2C5ADF97195 /* Pods-ButterflySystem-ButterflySystemUITests.release.xcconfig */,
+				E7EDCD954D07FA6E7EFA3136 /* Pods-ButterflySystemTests.debug.xcconfig */,
+				D1B63E3E8DB2D4B6A1D66CDC /* Pods-ButterflySystemTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B515979C25E6670C003FCF57 /* ButterflySystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51597CA25E6670D003FCF57 /* Build configuration list for PBXNativeTarget "ButterflySystem" */;
+			buildPhases = (
+				FC420CEEAD0ABDE8B1746C62 /* [CP] Check Pods Manifest.lock */,
+				B515979925E6670C003FCF57 /* Sources */,
+				B515979A25E6670C003FCF57 /* Frameworks */,
+				B515979B25E6670C003FCF57 /* Resources */,
+				932BA3E827B3533BD1593D6F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ButterflySystem;
+			productName = ButterflySystem;
+			productReference = B515979D25E6670C003FCF57 /* ButterflySystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B51597B525E6670D003FCF57 /* ButterflySystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51597CD25E6670D003FCF57 /* Build configuration list for PBXNativeTarget "ButterflySystemTests" */;
+			buildPhases = (
+				6074FBC21BC9F6B1352BDA47 /* [CP] Check Pods Manifest.lock */,
+				B51597B225E6670D003FCF57 /* Sources */,
+				B51597B325E6670D003FCF57 /* Frameworks */,
+				B51597B425E6670D003FCF57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B51597B825E6670D003FCF57 /* PBXTargetDependency */,
+			);
+			name = ButterflySystemTests;
+			productName = ButterflySystemTests;
+			productReference = B51597B625E6670D003FCF57 /* ButterflySystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B51597C025E6670D003FCF57 /* ButterflySystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51597D025E6670D003FCF57 /* Build configuration list for PBXNativeTarget "ButterflySystemUITests" */;
+			buildPhases = (
+				A57633CD52495EE83716D1B9 /* [CP] Check Pods Manifest.lock */,
+				B51597BD25E6670D003FCF57 /* Sources */,
+				B51597BE25E6670D003FCF57 /* Frameworks */,
+				B51597BF25E6670D003FCF57 /* Resources */,
+				D3A732D2C83693CA8F66511B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B51597C325E6670D003FCF57 /* PBXTargetDependency */,
+			);
+			name = ButterflySystemUITests;
+			productName = ButterflySystemUITests;
+			productReference = B51597C125E6670D003FCF57 /* ButterflySystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B515979525E6670C003FCF57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					B515979C25E6670C003FCF57 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B51597B525E6670D003FCF57 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B515979C25E6670C003FCF57;
+					};
+					B51597C025E6670D003FCF57 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B515979C25E6670C003FCF57;
+					};
+				};
+			};
+			buildConfigurationList = B515979825E6670C003FCF57 /* Build configuration list for PBXProject "ButterflySystem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B515979425E6670C003FCF57;
+			productRefGroup = B515979E25E6670C003FCF57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B515979C25E6670C003FCF57 /* ButterflySystem */,
+				B51597B525E6670D003FCF57 /* ButterflySystemTests */,
+				B51597C025E6670D003FCF57 /* ButterflySystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B515979B25E6670C003FCF57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51597B025E6670D003FCF57 /* LaunchScreen.storyboard in Resources */,
+				B51597F525E669BB003FCF57 /* PurchaseOrderTableViewCell.xib in Resources */,
+				B51597AD25E6670D003FCF57 /* Assets.xcassets in Resources */,
+				B51597A825E6670C003FCF57 /* Main.storyboard in Resources */,
+				B515984425E69DAD003FCF57 /* PurchaseDetailsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51597B425E6670D003FCF57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51597BF25E6670D003FCF57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6074FBC21BC9F6B1352BDA47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButterflySystemTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		932BA3E827B3533BD1593D6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterflySystem/Pods-ButterflySystem-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterflySystem/Pods-ButterflySystem-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ButterflySystem/Pods-ButterflySystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A57633CD52495EE83716D1B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButterflySystem-ButterflySystemUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A732D2C83693CA8F66511B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterflySystem-ButterflySystemUITests/Pods-ButterflySystem-ButterflySystemUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterflySystem-ButterflySystemUITests/Pods-ButterflySystem-ButterflySystemUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ButterflySystem-ButterflySystemUITests/Pods-ButterflySystem-ButterflySystemUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC420CEEAD0ABDE8B1746C62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButterflySystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B515979925E6670C003FCF57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51597A125E6670C003FCF57 /* AppDelegate.swift in Sources */,
+				B51597FE25E669D0003FCF57 /* PurchaseOrdersViewController.swift in Sources */,
+				B51597AB25E6670C003FCF57 /* ButterflySystem.xcdatamodeld in Sources */,
+				B51597F625E669BB003FCF57 /* PurchaseOrderTableViewCell.swift in Sources */,
+				B515983525E66C1B003FCF57 /* PurchaseOrder+CoreDataClass.swift in Sources */,
+				B515983625E66C1B003FCF57 /* PurchaseOrder+CoreDataProperties.swift in Sources */,
+				B515983725E66C1B003FCF57 /* Invoice+CoreDataClass.swift in Sources */,
+				B515984325E69DAD003FCF57 /* PurchaseDetailsTableViewCell.swift in Sources */,
+				B51597FD25E669D0003FCF57 /* PurchaseDetailViewController.swift in Sources */,
+				B515983425E66C1B003FCF57 /* Item+CoreDataProperties.swift in Sources */,
+				B515983325E66C1B003FCF57 /* Item+CoreDataClass.swift in Sources */,
+				B51597A325E6670C003FCF57 /* SceneDelegate.swift in Sources */,
+				8B9D8CFA25E748BF0024116C /* AddNewItemViewController.swift in Sources */,
+				B515983825E66C1B003FCF57 /* Invoice+CoreDataProperties.swift in Sources */,
+				8B9D8CF525E748A90024116C /* AddPurchaseOrderViewController.swift in Sources */,
+				B515983D25E671A1003FCF57 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51597B225E6670D003FCF57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51597BB25E6670D003FCF57 /* ButterflySystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51597BD25E6670D003FCF57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51597C625E6670D003FCF57 /* ButterflySystemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B51597B825E6670D003FCF57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B515979C25E6670C003FCF57 /* ButterflySystem */;
+			targetProxy = B51597B725E6670D003FCF57 /* PBXContainerItemProxy */;
+		};
+		B51597C325E6670D003FCF57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B515979C25E6670C003FCF57 /* ButterflySystem */;
+			targetProxy = B51597C225E6670D003FCF57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B51597A625E6670C003FCF57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51597A725E6670C003FCF57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B51597AE25E6670D003FCF57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51597AF25E6670D003FCF57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B51597C825E6670D003FCF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B51597C925E6670D003FCF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B51597CB25E6670D003FCF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 790204622E413E1FA4C83F91 /* Pods-ButterflySystem.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ABR8N92P2;
+				INFOPLIST_FILE = ButterflySystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ButterflySystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B51597CC25E6670D003FCF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23EDD66C3F5DB983ED4F1D99 /* Pods-ButterflySystem.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ABR8N92P2;
+				INFOPLIST_FILE = ButterflySystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ButterflySystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B51597CE25E6670D003FCF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7EDCD954D07FA6E7EFA3136 /* Pods-ButterflySystemTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ButterflySystemTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ButterflySystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflySystem.app/ButterflySystem";
+			};
+			name = Debug;
+		};
+		B51597CF25E6670D003FCF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B63E3E8DB2D4B6A1D66CDC /* Pods-ButterflySystemTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ButterflySystemTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ButterflySystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflySystem.app/ButterflySystem";
+			};
+			name = Release;
+		};
+		B51597D125E6670D003FCF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71AF6EF44C59C111D28C5185 /* Pods-ButterflySystem-ButterflySystemUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ButterflySystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ButterflySystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButterflySystem;
+			};
+			name = Debug;
+		};
+		B51597D225E6670D003FCF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A484DD13C5A2C5ADF97195 /* Pods-ButterflySystem-ButterflySystemUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ButterflySystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ButterflySystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButterflySystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B515979825E6670C003FCF57 /* Build configuration list for PBXProject "ButterflySystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51597C825E6670D003FCF57 /* Debug */,
+				B51597C925E6670D003FCF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51597CA25E6670D003FCF57 /* Build configuration list for PBXNativeTarget "ButterflySystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51597CB25E6670D003FCF57 /* Debug */,
+				B51597CC25E6670D003FCF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51597CD25E6670D003FCF57 /* Build configuration list for PBXNativeTarget "ButterflySystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51597CE25E6670D003FCF57 /* Debug */,
+				B51597CF25E6670D003FCF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51597D025E6670D003FCF57 /* Build configuration list for PBXNativeTarget "ButterflySystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51597D125E6670D003FCF57 /* Debug */,
+				B51597D225E6670D003FCF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B51597A925E6670C003FCF57 /* ButterflySystem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B51597AA25E6670C003FCF57 /* ButterflySystem.xcdatamodel */,
+			);
+			currentVersion = B51597AA25E6670C003FCF57 /* ButterflySystem.xcdatamodel */;
+			path = ButterflySystem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B515979525E6670C003FCF57 /* Project object */;
+}
